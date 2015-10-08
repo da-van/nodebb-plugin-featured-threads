@@ -4,7 +4,7 @@
 		<meta itemprop="name" content="{topics.title}">
 
 		<div class="category-icon">
-			<a style="color: {topics.category.color};" href="{relative_path}/topic/{topics.slug}" itemprop="url">
+			<a style="color: {topics.category.color};" href="{config.relative_path}/topic/{topics.slug}" itemprop="url">
 				<div class="category-header category-header-image-cover" style="color: {topics.category.color}; background: url({topics.thumb}); background-color: {topics.category.bgColor};">
 					<span class="badge">{topics.postcount} </span>
 					<!-- IF !topics.thumb -->
@@ -14,7 +14,7 @@
 			</a>
 
 			<div class="category-box">
-				<a href="{relative_path}/topic/{topics.slug}" itemprop="url">
+				<a href="{config.relative_path}/topic/{topics.slug}" itemprop="url">
 					<h4><i class="fa {topics.category.icon} visible-xs-inline"></i> {topics.title}</h4>
 				</a>
 				<div class="description" itemprop="description">by {topics.user.username}</div>
